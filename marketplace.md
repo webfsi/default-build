@@ -1,5 +1,7 @@
 main plugins vscode:
 
+[Текст посилання](URL "Необов'язковий титул")
+
     	- name: Auto Rename Tag
     	- link: [https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
