@@ -1,7 +1,5 @@
 main plugins vscode:
 
-- name: [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-
 1. name: [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) time(17_ms)
 1. name: [Awesome tree](https://marketplace.visualstudio.com/items?itemName=bajdzis.awesome-tree) time(62_ms)
 1. name: [BEM Helper](https://marketplace.visualstudio.com/items?itemName=Box-Of-Hats.bemhelper) time(4_ms)
