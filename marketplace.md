@@ -2,27 +2,42 @@ main plugins vscode:
 
 - name: [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 
-1.
-1. 1.-completed
-1. -completed
+1. name: [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag) time(17_ms)
+1. name: [Awesome tree](https://marketplace.visualstudio.com/items?itemName=bajdzis.awesome-tree) time(62_ms)
+1. name: [BEM Helper](https://marketplace.visualstudio.com/items?itemName=Box-Of-Hats.bemhelper) time(4_ms)
+1. name: [CSS Navigation](https://marketplace.visualstudio.com/items?itemName=pucelle.vscode-css-navigation) time(25_ms)
+1. name: [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) /71ms
+1. name: [CSS Responsive](https://marketplace.visualstudio.com/items?itemName=mrezechi3l.css-responsive) time(2_ms)
+1. name: [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) time(13_ms)
+1. name: [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) time(22_ms)
+1. name: [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) time(59_ms)
+1. name: [GitLens — Git supercharged](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens) time(34_ms)
+1. name: [Google Translate](https://marketplace.visualstudio.com/items?itemName=hancel.google-translate) time(46_ms)
+1. name: [HTML Format](https://marketplace.visualstudio.com/items?itemName=mohd-akram.vscode-html-format) time(3_ms)
+1. name: [HTML to CSS autocompletion](https://marketplace.visualstudio.com/items?itemName=solnurkarim.html-to-css-autocompletion) time(-_ms)
+1. name: [Import Cost](https://marketplace.visualstudio.com/items?itemName=wix.vscode-import-cost) time(-_ms)
+1. name: [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) time(2_ms)
+1. name: [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) time(-_ms)
+1. name: [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets) time(-_ms)
+1. name: [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) time(5_ms)
+1. name: [Material Theme Icons](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme-icons) time(-_ms)
+1. name: [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme) time(-_ms)
+1. name: [One Monokai Theme](https://marketplace.visualstudio.com/items?itemName=azemoh.one-monokai) time(seccccc_ms)
+1. name: [Path Autocomplete](https://marketplace.visualstudio.com/items?itemName=ionutvmi.path-autocomplete) time(9_ms)
+1. name: [PHP Twig](https://marketplace.visualstudio.com/items?itemName=artagnon.vstwig) time(-_ms)
+1. name: [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) time(20_ms)
+1. name: [SCSS Everywhere](https://marketplace.visualstudio.com/items?itemName=gencer.html-slim-scss-css-class-completion) time(252_ms)
+1. name: [SVG Viewer](link) time(21_ms)
+1. name: [SCSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=mrmlnc.vscode-scss) time(80_ms)
+1. name: [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) time(6_ms)
+1. name: [Tailwind Snippets](https://marketplace.visualstudio.com/items?itemName=Zarifprogrammer.tailwind-snippets) time(-_ms)
+1. name: [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight) time(1_ms)
+1. name: [transpose](https://marketplace.visualstudio.com/items?itemName=v4run.transpose) time(seccccc_ms)
+1. name: [Twig Language](linhttps://marketplace.visualstudio.com/items?itemName=mblode.twig-languagek) time(11_ms)
+1. name: [TWIG pack](https://marketplace.visualstudio.com/items?itemName=bajdzis.vscode-twig-pack) time(3_ms)
+1. name: [Version Lens](https://marketplace.visualstudio.com/items?itemName=pflannery.vscode-versionlens) time(246_ms)
+1. name: [Vscode Google Translate](https://marketplace.visualstudio.com/items?itemName=funkyremi.vscode-google-translate) time(84_ms)
+1. name: [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons) time(10_ms)
+1. name: [screen](https://prnt.sc/4DfJTR8Ew-O_) time(seccccc_ms)
+1. name: [screen](https://prnt.sc/j-FDzez9hz9d) time(seccccc_ms)
 
-   - name: Auto Rename Tag
-   - link: [https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-
-   - name: Awesome tree
-   - link: https://marketplace.visualstudio.com/items?itemName=bajdzis.awesome-tree
-
-   - name: ssss
-   - link: ssss
-
-   - name: ssss
-   - link: ssss
-
-   - name: ssss
-   - link: ssss
-
-   - name: ssss
-   - link: ssss
-
-   - name: ssss
-   - link: ssss
