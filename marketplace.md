@@ -1,23 +1,22 @@
-- `npm run start` - run dev-server and let magic happen, or
-- `npm run build` - build project from sources
+main plugins vscode:
 
-for dev usage example:
+    	- name: Auto Rename Tag
+    	- link: https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag
 
-    {# variable example #}
-    <h1>{{title}}</h1>
+    	- name: Awesome tree
+    	- link: https://marketplace.visualstudio.com/items?itemName=bajdzis.awesome-tree
 
+    	- name: ssss
+    	- link: ssss
 
-    {# partial example #}
-    {% include "partials/_header.twig" %}
+    	- name: ssss
+    	- link: ssss
 
-    {# mixin example #}
-    {{mixins.icon('facebook')}}
+    	- name: ssss
+    	- link: ssss
 
+    	- name: ssss
+    	- link: ssss
 
-    {# data usage example #}
-    	{% import "data/data.twig" as tests %}
-
-    	{% for test in tests.list %}
-    	<li>{{test.title}}</li>
-    	{% endfor %}
-    {# end of example #}
+    	- name: ssss
+    	- link: ssss
