@@ -4,6 +4,7 @@
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
 dist
+psd
 
 # Node artifact files
 node_modules/
