@@ -1,4 +1,4 @@
-{
+
   //~/Library/Application Support/Code/User/settings.json
 	///////////// styles vs code
   "workbench.activityBar.location": "top",
@@ -125,4 +125,4 @@
   "vscodeGoogleTranslate.preferredLanguage": "English",
   "git.confirmSync": false,
 
-}
+
