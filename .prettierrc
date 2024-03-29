@@ -10,6 +10,6 @@
 	"proseWrap": "always",
 	"htmlWhitespaceSensitivity": "css",
 
-	"arrowParens": "consistent", //as-needed always consistent
+	"arrowParens": "always", //as-needed always consistent
 	"endOfLine": "lf"
 }

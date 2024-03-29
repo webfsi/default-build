@@ -10,6 +10,13 @@
 // 	}
 // }
 
+.primary-section {
+	&__header {
+		&--main {
+			background-color: #fff;
+		}
+	}
+}
 
 .container {
 	--containerMaxWidth: $container-max-width;
@@ -20,7 +27,6 @@
 	padding: 0 var(--containerPaddingX);
 	margin: 0 auto;
 	@include tabletMaxi {
-
 	}
 	@include mobile {
 		--containerPaddingX: 15px;

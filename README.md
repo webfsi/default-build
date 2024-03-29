@@ -8,7 +8,7 @@ for dev usage example:
 	{# variable example #}
 	<h1>{{title}}</h1>
 
-	
+
 	{# partial example #}
 	{% include "partials/_header.twig" %}
 
@@ -18,7 +18,7 @@ for dev usage example:
 
 	{# data usage example #}
 		{% import "data/data.twig" as tests %}
-		
+
 		{% for test in tests.list %}
 		<li>{{test.title}}</li>
 		{% endfor %}
