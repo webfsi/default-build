@@ -1,0 +1,71 @@
+
+<div class="container-hub">
+
+  <div class="logo-hub">
+    <a href="https://www.mongoliatravel.guide/en" target="_blank">
+      <img class="w-[150px]" src="{{ url.step1 }}img/logo-big.svg"
+        alt="image">
+    </a>
+  </div>
+
+  <div class="burger-btns">
+    <button class="btn-burger" data-click-burger-btn>
+      <span></span><span></span>
+    </button>
+  </div>
+
+  <div class="container-hub__list" data-enter-page-first>
+    <div class="hub hub_two is-hidden">
+      <div class="hub__wrp">
+        <div class="hub__video bg-bl"
+          style="background-image: url({{ url.step1 }}img/img-user-visited-not.jpg);">
+          <!-- <video class="hero-video full-screen" muted playsinline>
+            <source
+              src="https://player.vimeo.com/progressive_redirect/playback/873949025/rendition/720p/file.mp4?loc=external&signature=d9c25bebe3c81e42e93f349b6a281820ec65c47599d10fc9bb4133d786d70faf"
+              type="video/mp4">
+          </video> -->
+          <video class="hero-video full-screen" muted playsinline data-change-dev-src>
+            <source
+              data-src-desk="https://player.vimeo.com/progressive_redirect/playback/873949025/rendition/720p/file.mp4?loc=external&signature=d9c25bebe3c81e42e93f349b6a281820ec65c47599d10fc9bb4133d786d70faf"
+              data-src-mob="https://player.vimeo.com/progressive_redirect/playback/878199872/rendition/360p/file.mp4?loc=external&signature=e676252279072f6091885744910aa4741a1f2c029d61e27e3a9c36f3cdd9fb07"
+              type="video/mp4">
+          </video>
+          <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              var videoSource = document.querySelector('[data-change-dev-src] source');
+              var srcDesk = videoSource.getAttribute('data-src-desk');
+              var srcMob = videoSource.getAttribute('data-src-mob');
+          
+              if (window.matchMedia("(max-width: 699px)").matches) {
+                videoSource.src = srcMob;
+              } else {
+                videoSource.src = srcDesk;
+              }
+          
+              videoSource.parentElement.load();
+            });
+          </script>
+        </div>
+        <div class="hub__content">
+          <div class="hub__btn-left">
+            <button class="btn-border" data-video-skip>
+              Skip intro
+            </button>
+          </div>
+          <div class="hub__btn-right">
+            <div class="play-btn btn-sound btn-play_sm" data-video-sound>
+              <span class="btn-sound__icon-on">
+                {{ inline('ic-sound-on') }}
+              </span>
+              <span class="btn-sound__icon-off">
+                {{ inline('ic-sound-off') }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include './_burger.twig' %}
+
+  </div>
+</div>

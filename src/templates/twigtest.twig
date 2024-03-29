@@ -1,0 +1,79 @@
+---
+title: Meet Mongolia - Rio Tinto - CNN
+description: Explore the untapped potential for adventure, a dynamic business landscape, and the culture of a progressive nation in Mongolia.
+subTitle: A Country on the Go
+subTitle2: A Country on the Go
+ogDescription: Discover Mongolia, a country rich with culture, history, and breath-taking natural beauty, and explore its untapped potential for business, leisure, and adventure.
+twitterDescription: Discover Mongolia, a country rich with culture, history, and breath-taking natural beauty, and explore its untapped potential for business, leisure, and adventure.
+metaImg: hub-meta.jpg
+pageName: homePage
+---
+
+	{% set value = 100 %}
+	{% set name = value %}
+	{# {% set user = {name: 'John', isAdmin: true} %} #}
+
+
+{% set url = {
+	step1: '',
+	step2: './',
+	step3: '/',
+	step4: '',
+	stepClass: 'step-link-change-url'
+} %}
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+<main data-scroll-container data-url>
+<br><br><br><br>
+	{# {% include './pages/hub/_hub.twig' %} #}
+	<p>Hello, {{ name }}!</p>
+
+	<p>Hello, {{ name }}!</p>
+	{# {% if user.isAdmin %}
+			<p>Добро пожаловать, администратор {{ user.name }}!</p>
+	{% else %}
+			<p>Добро пожаловать, {{ user.name }}!</p>
+	{% endif %} #}
+
+	{% set users = [
+		{
+			name: 'John',
+			age: 25,
+			div: '
+				<img src="%URL_STEP1%img/logo.png" class="absolute top-10 right-8 w-[185px] xs:w-[110px] xs:top-[30px] xs:right-[20px]">
+			'
+
+		},
+		{
+			name: 'Jane'
+		},
+		{
+			name: 'Doe'
+		},
+		{
+			name: 'Doe'
+		}
+	] %}
+	{% set url = {
+    step1: '../',
+    step2: './',
+    step3: '/',
+    step4: '',
+    stepClass: 'step-link-change-url'
+} %}
+	<ul>
+	{% for i in users %}
+			<li>{{ i.name }} {{ i.age }} {{ i.div|replace('%URL_STEP1%', url.step1)|safe }}</li>
+	{% endfor %}
+	</ul>
+
+
+
+	{# <p>Сегодня: {{ "now"|date("m/d/Y") }}</p> #}
+
+
+
+</main>
+
+{% endblock %}

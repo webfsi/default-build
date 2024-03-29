@@ -1,0 +1,27 @@
+{% import "mixins/_mixins.twig" as mixins %}
+{% set inline = mixins.inline %}
+{% set svg = mixins.svg %}
+
+<!DOCTYPE html>
+<html lang="en">
+	{% include "./_head.twig" %}
+
+	<body data-page-name="{{ pageName }}">
+
+		{% include "blocks/_header.twig" %}
+
+		{% block content %}
+
+		{% endblock %}
+
+		<div class="c-prompt">
+			<div class="c-prompt_icon"></div>
+			<div class="c-prompt_text"> This content looks better in portrait mode <br>
+				<b class="font-bold">Rotate Device</b>
+			</div>
+		</div>
+
+		<script src="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

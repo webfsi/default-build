@@ -1,0 +1,26 @@
+---
+title: Meet Mongolia - Rio Tinto - CNN
+description: Explore the untapped potential for adventure, a dynamic business landscape, and the culture of a progressive nation in Mongolia.
+subTitle: A Country on the Go
+subTitle2: A Country on the Go
+ogDescription: Discover Mongolia, a country rich with culture, history, and breath-taking natural beauty, and explore its untapped potential for business, leisure, and adventure.
+twitterDescription: Discover Mongolia, a country rich with culture, history, and breath-taking natural beauty, and explore its untapped potential for business, leisure, and adventure.
+metaImg: hub-meta.jpg
+pageName: homePage
+---
+
+{% set url = {
+	step1: '',
+	step2: './',
+	step3: '/',
+	step4: '',
+	stepClass: 'step-link-change-url'
+} %}
+{% extends 'layouts/_page-default.twig' %}
+{% block content %}
+
+<main data-scroll-container data-url>
+	{% include './pages/hub/_hub.twig' %}
+</main>
+
+{% endblock %}
