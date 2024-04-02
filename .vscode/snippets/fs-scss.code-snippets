@@ -1,0 +1,1972 @@
+{
+  // Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+  // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+  // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+  // used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+  // Placeholders with the same ids are connected.
+  // Example:
+  // "Print to console": {
+  //  "scope": "javascript,typescript",
+  //  "prefix": "log",
+  //  "body": [
+  //    "console.log('$1');",
+  //    "$2"
+  //  ],
+  //  "description": "Log output to console"
+  // }
+
+  "test snippets": {
+    "scope": "scss, css",
+    "prefix": "test",
+    "body": [
+      "max-width: ${1|one,two,three|};",
+      "\r",
+      "\f",
+      "\t",
+      "\b",
+      "\n",
+      "\/\/\/\/",
+      "\t${TM_SELECTED_TEXT}",
+      // TM_SELECTED_TEXT Текущий выделенный текст или пустая строка
+      // TM_CURRENT_LINE Содержимое текущей строки
+      // TM_CURRENT_WORD Содержимое слова под курсором или пустой строки
+      // TM_LINE_INDEX Номер строки с нулевым индексом
+      // TM_LINE_NUMBER Номер строки на основе одного индекса
+      // TM_FILENAME Имя файла текущего документа
+      // TM_FILENAME_BASE Имя файла текущего документа без его расширений
+      // TM_DIRECTORY Каталог текущего документа
+      // TM_FILEPATH Полный путь к файлу текущего документа
+      // RELATIVE_FILEPATH Относительный (относительно открытой рабочей области или папки) путь к файлу текущего документа
+      // CLIPBOARD Содержимое вашего буфера обмена
+      // WORKSPACE_NAME Имя открытого рабочего пространства или папки
+      // WORKSPACE_FOLDER Путь к открытой рабочей области или папке
+      "}",
+      "$0"
+    ],
+    "description": "desc"
+  },
+
+  // butstrap grid
+
+  "Offset Mixin": {
+    "scope": "scss, css",
+    "prefix": "ioff",
+    "body": [
+      "@include offset(${1:1});",
+      "$0"
+    ],
+    "description": "Applies offset mixin"
+  },
+
+  "col Mixin": {
+    "scope": "scss, css",
+    "prefix": "icol",
+    "body": [
+      "@include col(${1:1});",
+      "$0"
+    ],
+    "description": "Applies col mixin"
+  },
+
+  "row Mixin": {
+    "scope": "scss, css",
+    "prefix": "irow",
+    "body": [
+      "@include row();",
+      "$0"
+    ],
+    "description": "Applies row mixin"
+  },
+
+  // allllllll
+
+  "image assets": {
+    "scope": "php",
+    "prefix": "img",
+    "body": [
+      "<img src=\"assets/img/$1\" alt=\"image\">$0"
+    ],
+    "description": "image assets desc"
+  },
+
+  "image": {
+    "scope": "html, twig",
+    "prefix": "img",
+    "body": [
+      "<img src=\"img/$1\" alt=\"image\">$0"
+    ],
+    "description": "image desc"
+  },
+
+
+  "scroll snap scss": {
+    "scope": "scss, css",
+    "prefix": "ovscroll",
+    "body": [
+      ".overflow-scroll {",
+      "\toverflow-y: scroll;",
+      "\tscroll-snap-type: x mandatory;",
+      "\tscroll-snap-type: y proximity;",
+      "\tscroll-snap-type: both mandatory;",
+      "\tscroll-padding: 20px;",
+      "\tscroll-margin: 20px;",
+      "\t> div {",
+      "\t\tscroll-snap-align: start end;",
+      "\t\tscroll-snap-align: center;",
+      "\t}",
+      "}"
+    ],
+    "description": "scroll snap scss desc"
+  },
+
+  "counter list before myscss": {
+    "scope": "scss, css",
+    "prefix": "licount",
+    "body": [
+      "ul {",
+      "\tcounter-reset: my-awesome-counter;",
+      "\tli {",
+      "\t\tcounter-increment: my-awesome-counter;",
+      "\t}",
+      "\tli:before {",
+      "\t\tcontent: \"Step \" counter(my-awesome-counter);",
+      "\t}",
+      "}"
+    ],
+    "description": "counter list before myscss desc"
+  },
+
+  "zindex": {
+    "scope": "scss, css",
+    "prefix": "zi",
+    "body": [
+      "z-index: ${1:1};",
+      "$0"
+    ],
+    "description": "zindex"
+  },
+
+  "wordbreak": {
+    "scope": "scss, css",
+    "prefix": "word",
+    "body": [
+      "white-space: pre-wrap;",
+      "word-break: break-all;",
+      "// word-break: break-word;",
+      "// word-wrap: break-word;",
+      "// overflow-wrap: break-word;"
+    ],
+    "description": "wordbreak FS"
+  },
+
+  "vw-desc myscss": {
+    "scope": "scss, css",
+    "prefix": "szd",
+    "body": [
+      "vw-desktop(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "vw-desc"
+  },
+
+
+  "vw-desc2 myscss": {
+    "scope": "scss, css",
+    "prefix": "szl",
+    "body": [
+      "vw-laptop(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "vw-desc2"
+  },
+
+  "vw-desc3 myscss": {
+    "scope": "scss, css",
+    "prefix": "szt",
+    "body": [
+      "vw-tablet(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "vw-desc3"
+  },
+
+  "vw-desc4 myscss": {
+    "scope": "scss, css",
+    "prefix": "szi",
+    "body": [
+      "vw-ipad(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "vw-desc4"
+  },
+
+  "vw-desc5 myscss": {
+    "scope": "scss, css",
+    "prefix": "szm",
+    "body": [
+      "vw-mobile(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "vw-desc5"
+  },
+
+  "Date": {
+		"prefix": "date",
+		"body": [
+			"$CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR"
+		]
+	},
+
+  "Block Comment": {
+		"prefix": "com",
+		"body": [
+			"$BLOCK_COMMENT_START ${TM_SELECTED_TEXT}$0 $BLOCK_COMMENT_END"
+		]
+	},
+
+  "Block Comment TODO": {
+		"prefix": "todo",
+		"body": [
+			"$BLOCK_COMMENT_START TODO: Front_FS ${TM_SELECTED_TEXT}$0 $BLOCK_COMMENT_END"
+		]
+	},
+
+  "fake img": {
+    "scope": "html, twig, php, scss",
+    "prefix": "fakeimg",
+    "body": [
+      "<img src=\"https://fakeimg.pl/${1:350}x${2:200}/?text=${3:Img}\">"
+    ],
+    "description": "img fake"
+  },
+
+  "export default javascript": {
+    "scope": "javascript",
+    "prefix": "expdef",
+    "body": [
+      "export default () => {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "export defaults javascript"
+  },
+
+  "picture picwebp": {
+    "scope": "html, vue, javascript",
+    "prefix": "picwebp",
+    "body": [
+      "<picture>",
+      "\t<source srcset=\"img/${1:img1}.webp\" type=\"image/webp\">",
+      "\t<img src=\"img/${1:img1}.jpg\" alt=\"image\">",
+      "</picture>"
+    ],
+    "description": "picture picwebp"
+  },
+
+  "picture adaptive": {
+    "scope": "html, vue, javascript",
+    "prefix": "picadapt",
+    "body": [
+      "<picture>",
+      "  <source srcset=\"img/${1:img3}-mob.jpg${2:, img/${1:img3}@2x.jpg 2x}\" media=\"(max-width: ${4:767px})\">",
+      "  <source srcset=\"img/${1:img3}-tabl.jpg\" media=\"(max-width: ${3:1054px})\">",
+      "  <img srcset=\"img/${1:img3}.jpg${2:, img/${1:img3}@2x.jpg 2x}\" alt=\"\">",
+      "</picture>"
+    ],
+    "description": "picture adapt"
+  },
+
+  "iclude tablet": {
+    "scope": "scss, sass",
+    "prefix": "mmt",
+    "body": [
+      "@include tabletMaxi {",
+      "\t$0",
+      "}"
+    ],
+    "description": "iclude tablet"
+  },
+
+  "iclude mobile": {
+    "scope": "scss, sass",
+    "prefix": "mmm",
+    "body": [
+      "@include mobile {",
+      "\t$0",
+      "}"
+    ],
+    "description": "iclude mobile"
+  },
+
+  "iclude tablet mf": {
+    "scope": "scss, sass",
+    "prefix": "mft",
+    "body": [
+      "@include fdesc {",
+      "\t$0",
+      "}"
+    ],
+    "description": "iclude tablet mf"
+  },
+
+
+  //media cheit
+
+  // "med min small": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mis",
+  //   "body": [
+  //     "@include min-small {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min small desc"
+  // },
+
+  // "med min tabl": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mit",
+  //   "body": [
+  //     "@include min-tablet {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min tabl desc"
+  // },
+
+  // "med min ipad": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mip",
+  //   "body": [
+  //     "@include min-tablet-portrait {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min ipad desc"
+  // },
+
+  // "med min laptop": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mil",
+  //   "body": [
+  //     "@include min-laptop {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min laptop desc"
+  // },
+
+  // "med min desc": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mid",
+  //   "body": [
+  //     "@include min-desktop {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min desc desc"
+  // },
+
+  // "med min desclg": {
+  //   "scope": "scss, sass",
+  //   "prefix": "midl",
+  //   "body": [
+  //     "@include min-desktop-lg {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med min desclg desc"
+  // },
+
+
+
+  // "med max small": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mas",
+  //   "body": [
+  //     "@include max-small {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max small desc"
+  // },
+
+  // "med max tabl": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mat",
+  //   "body": [
+  //     "@include max-tablet {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max tabl desc"
+  // },
+
+  // "med max ipad": {
+  //   "scope": "scss, sass",
+  //   "prefix": "map",
+  //   "body": [
+  //     "@include max-tablet-portrait {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max ipad desc"
+  // },
+
+  // "med max laptop": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mal",
+  //   "body": [
+  //     "@include max-laptop {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max laptop desc"
+  // },
+
+  // "med max desc": {
+  //   "scope": "scss, sass",
+  //   "prefix": "mad",
+  //   "body": [
+  //     "@include max-desktop {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max desc desc"
+  // },
+
+  // "med max desclg": {
+  //   "scope": "scss, sass",
+  //   "prefix": "madl",
+  //   "body": [
+  //     "@include max-desktop-lg {",
+  //     "\t$0",
+  //     "}"
+  //   ],
+  //   "description": "med max desclg desc"
+  // },
+
+  // VW RESPONSIVE
+  // $vw-base - width device
+
+  // $vw-base: 19.2px;
+  // $vw-base-laptop: 14.4px;
+  // $vw-base-mobile: 3.2px;
+
+  // @function fzd($size) {
+  //   $vw-size: $size / $vw-base;
+  //   @return $vw-size * 1vw;
+  // }
+
+  // @function fzl($size) {
+  //   $vw-size: $size / $vw-base-laptop;
+  //   @return $vw-size * 1vw;
+  // }
+
+  // @function fzm($size) {
+  //   $vw-size: $size / $vw-base-mobile;
+  //   @return $vw-size * 1vw;
+  // }
+
+  "size font m vw": {
+    "scope": "scss, sass",
+    "prefix": "fzmssss",
+    "body": [
+      "font-size: fzm($1);",
+      "$0;"
+    ],
+    "description": "size font m vw desc"
+  },
+
+  "size m vw": {
+    "scope": "scss, sass",
+    "prefix": "vm",
+    "body": [
+      "fzm(${TM_SELECTED_TEXT}$1)$0"
+    ],
+    "description": "size m vw desc"
+  },
+
+  "size l vw": {
+    "scope": "scss, sass",
+    "prefix": "vl",
+    "body": [
+      "fzl(${TM_SELECTED_TEXT}$1)$0"
+    ],
+    "description": "size l vw desc"
+  },
+
+  "size d vw": {
+    "scope": "scss, sass",
+    "prefix": "vd",
+    "body": [
+      "fzd(${TM_SELECTED_TEXT}$1)$0"
+    ],
+    "description": "size d vw desc"
+  },
+
+
+
+  ////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////
+  //JavaScript//////////////////////////////////////
+  ////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////
+
+  "100vh mobile fix": {
+    "scope": "javascript",
+    "prefix": "100vhfixmobile",
+    "body": [
+      "const setHeight = () => {",
+      "\tif (document.querySelector('.default-hero')) {",
+      "\t\tdocument.querySelector('.default-hero').style.minHeight = window.innerHeight + 'px'",
+      "\t}",
+      "};",
+      "",
+      "let deviceWidth = window.matchMedia('(max-width: 1054px)');",
+      "",
+      "if (deviceWidth.matches) {",
+      "\t// orientationchange, resize",
+      "\twindow.addEventListener('resize', setHeight);",
+      "\tsetHeight();",
+      "}"
+    ],
+    "description": "100vh mobile fix desc"
+  },
+
+  ////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////
+  //SСSS and СSS//////////////////////////////////////
+  ////////////////////////////////////////////////////
+  ////////////////////////////////////////////////////
+
+  "media orientation mobile dev": {
+    "scope": "scss, css",
+    "prefix": "mediaorientation",
+    "body": [
+      "/* портретная ориентация */",
+      "@media screen and (orientation:portrait) {",
+      "    /* Стили для портретной */",
+      "}",
+      "/* горизонтальная ориентация */",
+      "@media screen and (orientation:landscape) {",
+      "    /* стили для горизонтальной */",
+      "}"
+    ],
+    "description": "media orientation mobile dev"
+  },
+
+  "object fit myscss": {
+    "scope": "scss, css",
+    "prefix": "cover",
+    "body": [
+      "display: inline-block;",
+      "height: 100%;",
+      "width: 100%;",
+      "object-fit: cover;",
+      "$0"
+    ],
+    "description": "object fit"
+  },
+
+  "aspect ratio in width": {
+    "scope": "scss, css",
+    "prefix": "aspectratio",
+    "body": [
+      "width: calc((100vh - 490px) * (width / height));",
+      "height: calc(((100vw - 30px) / 3) * (height / width));",
+      "aspect-ratio: 16/9;",
+      "$0"
+    ],
+    "description": "aspect ratio in width"
+  },
+
+  "rgba myscss": {
+    "scope": "scss, css",
+    "prefix": "rgba",
+    "body": [
+      "rgba(${1:#${2|000,fff|}}, 0.${3:5})"
+    ],
+    "description": "rgba"
+  },
+
+  "obertka myscss": {
+    "scope": "scss, css",
+    "prefix": "?",
+    "body": [
+      " {",
+      "\t${TM_SELECTED_TEXT}",
+      "}",
+      "$0"
+    ],
+    "description": "obertka"
+  },
+
+  "calc myscss": {
+    "scope": "scss, css",
+    "prefix": "calc",
+    "body": [
+      "calc(${TM_SELECTED_TEXT}$0)"
+    ],
+    "description": "calc"
+  },
+
+  "obertka2 myscss": {
+    "scope": "scss, css",
+    "prefix": "??",
+    "body": [
+      " {",
+      "${TM_SELECTED_TEXT}",
+      "}",
+      "$0"
+    ],
+    "description": "obertka2"
+  },
+
+  "max-width: none css myscss": {
+    "scope": "scss, css",
+    "prefix": "mawn",
+    "body": [
+      "max-width: none;",
+      "$0"
+    ],
+    "description": "max-width: none"
+  },
+
+  "height: auto myscss": {
+    "scope": "scss, css",
+    "prefix": "ha",
+    "body": [
+      "height: auto;",
+      "$0"
+    ],
+    "description": "height: auto"
+  },
+
+  "wh myscss": {
+    "scope": "scss, css",
+    "prefix": "wh",
+    "body": [
+      "width: ${1:100%};",
+      "height: ${1:100%};",
+      "$0"
+    ],
+    "description": "width and height"
+  },
+
+  "pricecss myscss": {
+    "scope": "scss, css",
+    "prefix": "pricesass",
+    "body": [
+      "/* slider-price */",
+      ".noUi-target {",
+      "  border: 1px solid #ccc;",
+      "  border-left: none;",
+      "  border-right: none;",
+      "  box-shadow: none;",
+      "  background: #fff;",
+      "  border-radius: 0;",
+      "}",
+      "",
+      ".noUi-horizontal {",
+      "  height: 14px;",
+      "  .noUi-handle {",
+      "    width: 30px;",
+      "    height: 30px;",
+      "    top: -10px;",
+      "    left: -15px;",
+      "    box-shadow: none;",
+      "    border-radius: 50%;",
+      "    &:before, &:after",
+      "      display: none;",
+      "    }",
+      "  }",
+      "}",
+      "",
+      ".noUi-connect {",
+      "  box-shadow: none;",
+      "  background: #000;",
+      "}",
+      "",
+      ".noUi-tooltip {",
+      "  color: #000;",
+      "  border: 1px solid #000;",
+      "  height: 30px;",
+      "  line-height: 30px;",
+      "  padding: 0 8px;",
+      "}",
+      "",
+      ".slider-price-wrapp {",
+      "  margin-bottom: 25px;",
+      "  max-width: 300px;",
+      "}",
+      "",
+      ".slider-price {",
+      "  position: relative;",
+      "  margin: 0 15px 25px;",
+      "  &:before, &:after {",
+      "    content: ' ';",
+      "    position: absolute;",
+      "    left: -15px;",
+      "    top: -1px;",
+      "    border: 1px solid #ccc;",
+      "    border-right: none;",
+      "    height: 12px;",
+      "    width: 15px;",
+      "    border-radius: 10px 0 0 10px;",
+      "  }",
+      "  &:after {",
+      "    left: auto;",
+      "    right: -15px;",
+      "    border: 1px solid #ccc;",
+      "    border-left: none;",
+      "    border-radius: 0 10px 10px 0;",
+      "  }",
+      "}",
+      "",
+      ".slider-price-inputs {",
+      "  overflow: hidden;",
+      "  input {",
+      "    height: 30px;",
+      "    padding: 0 10px;",
+      "    color: #000;",
+      "    border: 1px solid #000;",
+      "    border-radius: 3px;",
+      "  }",
+      "}",
+      "",
+      ".slider-price-input-one {",
+      "  float: left;",
+      "  width: 100px;",
+      "  margin-right: 30px;",
+      "}",
+      "",
+      ".slider-price-input-two {",
+      "  float: left;",
+      "  width: 100px;",
+      "}"
+    ],
+    "description": "sass pricesass"
+  },
+
+  "plusminus myscss": {
+    "scope": "scss, css",
+    "prefix": "plusminussass",
+    "body": [
+      ".col-panel-tc",
+      "  display: inline-block;",
+      "  position: relative;",
+      "  width: 45px;",
+      "  padding: 0 18px;",
+      "  height: 26px;",
+      "  span",
+      "    position: absolute",
+      "    top: 0",
+      "    z-index: 10",
+      "    height: 26px",
+      "    line-height: 26px",
+      "    border: 1px solid #000",
+      "    width: 18px",
+      "    text-align: center",
+      "    cursor: pointer",
+      "    +select-text-none",
+      "  .minus",
+      "    left: 0",
+      "  .plus",
+      "    right: 0",
+      "  input",
+      "    width: 45px",
+      "    padding: 0",
+      "    text-align: center",
+      "    height: 26px",
+      "    background: #fff",
+      "    position: relative",
+      "    border: none",
+      "    border-top: 1px solid #222",
+      "    border-bottom: 1px solid #222",
+      "    outline: none",
+      "    border-radius: 0"
+    ],
+    "description": "sass plusminus"
+  },
+
+  "position absolute center myscss": {
+    "scope": "scss, css",
+    "prefix": "psam",
+    "body": [
+      "position: absolute;",
+      "top: 50%;",
+      "left: 50%;",
+      "transform: translate(-50%, -50%);",
+      "$0"
+    ],
+    "description": "position absolute center"
+  },
+
+  "position absolute fill myscss": {
+    "scope": "scss, css",
+    "prefix": "psama",
+    "body": [
+      "position: absolute;",
+      "top: 0;",
+      "left: 0;",
+      "bottom: 0;",
+      "right: 0;",
+      "$0"
+    ],
+    "description": "position absolute fill"
+  },
+
+  "animation myscss": {
+    "scope": "scss, css",
+    "prefix": "anim",
+    "body": [
+      "animation: {",
+      "\tname: none;",
+      "\tduration: 0s;",
+      "\ttiming-function: linear; // ease | ease-in-out",
+      "\tdelay: 0s; //задержка",
+      "\titeration-count: 1; // infinite | <number>",
+      "\tdirection: normal; // reverse; alternate; alternate-reverse;",
+      "\tfill-mode: none; // none | forwards | backwards | both",
+      "\tplay-state: running; // running | paused",
+      "}",
+      "$0"
+    ],
+    "description": "animation"
+  },
+
+  "fill myscss": {
+    "scope": "scss, css",
+    "prefix": "fi",
+    "body": [
+      "fill: #${1:fff};",
+      "$0"
+    ],
+    "description": "fill"
+  },
+
+  "focus myscss": {
+    "scope": "scss, css",
+    "prefix": "fs",
+    "body": [
+      "&:focus {",
+      "\t$0",
+      "}"
+    ],
+    "description": "focus"
+  },
+
+  "wa myscss": {
+    "scope": "scss, css",
+    "prefix": "wa",
+    "body": [
+      "width: auto;",
+      "$0"
+    ],
+    "description": "wa"
+  },
+
+  "cd myscss": {
+    "scope": "scss, css",
+    "prefix": "cd",
+    "body": [
+      "cursor: default;",
+      "$0"
+    ],
+    "description": "cd"
+  },
+
+  "cp myscss": {
+    "scope": "scss, css",
+    "prefix": "cp",
+    "body": [
+      "cursor: pointer;",
+      "$0"
+    ],
+    "description": "cp"
+  },
+
+  "tal myscss": {
+    "scope": "scss, css",
+    "prefix": "tal",
+    "body": [
+      "text-align: left;",
+      "$0"
+    ],
+    "description": "tal"
+  },
+
+  "tn myscss": {
+    "scope": "scss, css",
+    "prefix": "tn",
+    "body": [
+      "transparent"
+    ],
+    "description": "tn"
+  },
+
+  "flex fe myscss": {
+    "scope": "scss, css",
+    "prefix": "fe",
+    "body": [
+      "flex-end"
+    ],
+    "description": "flex fe"
+  },
+
+  "flex sb myscss": {
+    "scope": "scss, css",
+    "prefix": "sb",
+    "body": [
+      "space-between"
+    ],
+    "description": "flex sb"
+  },
+
+  "flex myscss": {
+    "scope": "scss, css",
+    "prefix": "df",
+    "body": [
+      "display: flex;",
+      "jc"
+    ],
+    "description": "flex"
+  },
+
+  "rt5 myscss": {
+    "scope": "scss, css",
+    "prefix": "rt5",
+    "body": [
+      "right: 50%;",
+      "$0"
+    ],
+    "description": "rt5"
+  },
+
+  "lt5 myscss": {
+    "scope": "scss, css",
+    "prefix": "lt5",
+    "body": [
+      "left: 50%;",
+      "$0"
+    ],
+    "description": "lt5"
+  },
+
+  "tt5 myscss": {
+    "scope": "scss, css",
+    "prefix": "tt5",
+    "body": [
+      "top: 50%;",
+      "$0"
+    ],
+    "description": "tt5"
+  },
+
+  "bt5 myscss": {
+    "scope": "scss, css",
+    "prefix": "bt5",
+    "body": [
+      "bottom: 50%;",
+      "$0"
+    ],
+    "description": "bt5"
+  },
+
+  "bta myscss": {
+    "scope": "scss, css",
+    "prefix": "bta",
+    "body": [
+      "bottom: auto;",
+      "$0"
+    ],
+    "description": "bta"
+  },
+
+  "tta myscss": {
+    "scope": "scss, css",
+    "prefix": "tta",
+    "body": [
+      "top: auto;",
+      "$0"
+    ],
+    "description": "tta"
+  },
+
+  "rta myscss": {
+    "scope": "scss, css",
+    "prefix": "rta",
+    "body": [
+      "right: auto;",
+      "$0"
+    ],
+    "description": "rta"
+  },
+
+  "lta myscss": {
+    "scope": "scss, css",
+    "prefix": "lta",
+    "body": [
+      "left: auto;",
+      "$0"
+    ],
+    "description": "lta"
+  },
+
+  "flex direction1 myscss": {
+    "scope": "scss, css",
+    "prefix": "fdr",
+    "body": [
+      "flex-direction: row;",
+      "$0"
+    ],
+    "description": "flex direction1"
+  },
+
+  "flex direction myscss": {
+    "scope": "scss, css",
+    "prefix": "fdc",
+    "body": [
+      "flex-direction: column;",
+      "$0"
+    ],
+    "description": "flex direction"
+  },
+
+  "title sass myscss": {
+    "scope": "scss, css",
+    "prefix": "tt",
+    "body": [
+      ".tt-site, h1, h2, h3, h4, h5, h6 {",
+      "\t$0",
+      "}"
+    ],
+    "description": "title scss"
+  },
+
+  "radius 50% myscss": {
+    "scope": "scss, css",
+    "prefix": "rad5",
+    "body": [
+      "border-radius: 50%;",
+      "$0"
+    ],
+    "description": "radius 50%"
+  },
+
+  "radius myscss": {
+    "scope": "scss, css",
+    "prefix": "rad",
+    "body": [
+      "border-radius: ${1:50%};",
+      "$0"
+    ],
+    "description": "radius"
+  },
+
+  "focus hover myscss": {
+    "scope": "scss, css",
+    "prefix": "hf",
+    "body": [
+      "&:focus, &:hover {",
+      "\t$0",
+      "}"
+    ],
+    "description": "focus hover"
+  },
+
+  "active myscss": {
+    "scope": "scss, css",
+    "prefix": "ac",
+    "body": [
+      "&:active {",
+      "\t$0",
+      "}"
+    ],
+    "description": "active"
+  },
+
+  "focus scss myscss": {
+    "scope": "scss, css",
+    "prefix": "fc",
+    "body": [
+      "&:focus {",
+      "\t$0",
+      "}"
+    ],
+    "description": "focus scss"
+  },
+
+  "hover myscss": {
+    "scope": "scss, css",
+    "prefix": "hv",
+    "body": [
+      "&:hover {",
+      "\t$0",
+      "}"
+    ],
+    "description": "hover"
+  },
+
+  "before myscss": {
+    "scope": "scss, css",
+    "prefix": "bf",
+    "body": [
+      "&:before {",
+      "\t$0",
+      "}"
+    ],
+    "description": "before"
+  },
+
+  "after myscss": {
+    "scope": "scss, css",
+    "prefix": "af",
+    "body": [
+      "&:after {",
+      "\t$0",
+      "}"
+    ],
+    "description": "after"
+  },
+
+  "after and before myscss": {
+    "scope": "scss, css",
+    "prefix": "bfaf",
+    "body": [
+      "&:before, &:after {",
+      "\t$0",
+      "}"
+    ],
+    "description": "before and after"
+  },
+
+  "after and before myscss2": {
+    "scope": "scss, css",
+    "prefix": "baf",
+    "body": [
+      "&:before, &:after {",
+      "\t$0",
+      "}"
+    ],
+    "description": "before and after2"
+  },
+
+  "content myscss": {
+    "scope": "scss, css",
+    "prefix": "cont",
+    "body": [
+      "content: \"\";",
+      "$0"
+    ],
+    "description": "cont"
+  },
+
+  "& sass myscss": {
+    "scope": "scss, css",
+    "prefix": "z",
+    "body": [
+      "&"
+    ],
+    "description": "& sass"
+  },
+
+  "backgroud myscss": {
+    "scope": "scss, css",
+    "prefix": "bg",
+    "body": [
+      "background: ${1:#fff} url(../img/${2:}) ${3:center} ${4:center} no-repeat;",
+      "${0}"
+    ],
+    "description": "bg fs"
+  },
+
+  "bgi myscss": {
+    "scope": "scss, css",
+    "prefix": "bgi",
+    "body": [
+      "background-image: url(../img/${1:});",
+      "${0}"
+    ],
+    "description": "bgi"
+  },
+
+  "bgp myscss": {
+    "scope": "scss, css",
+    "prefix": "bgp",
+    "body": [
+      "background-position: ${1:${2:}px ${3:}px};",
+      "${0}"
+    ],
+    "description": "bgp"
+  },
+
+  "oln myscss": {
+    "scope": "scss, css",
+    "prefix": "oln",
+    "body": [
+      "outline: none;",
+      "$0"
+    ],
+    "description": "oln"
+  },
+
+  "bgn myscss": {
+    "scope": "scss, css",
+    "prefix": "bgn",
+    "body": [
+      "background: none;",
+      "$0"
+    ],
+    "description": "bgn"
+  },
+
+  "brd myscss": {
+    "scope": "scss, css",
+    "prefix": "brd",
+    "body": [
+      "border: ${1:1px} solid ${2:#000};",
+      "$0"
+    ],
+    "description": "brd"
+  },
+
+  "bc myscss": {
+    "scope": "scss, css",
+    "prefix": "bc",
+    "body": [
+      "border-color: ${1:#000}",
+      "$0"
+    ],
+    "description": "bc"
+  },
+
+  "bn myscss": {
+    "scope": "scss, css",
+    "prefix": "bn",
+    "body": [
+      "border: none;",
+      "$0"
+    ],
+    "description": "bn"
+  },
+
+  "bb myscss": {
+    "scope": "scss, css",
+    "prefix": "bb",
+    "body": [
+      "border-bottom: ${1:1px} solid ${2:#000};",
+      "$0"
+    ],
+    "description": "bb"
+  },
+
+  "bt myscss": {
+    "scope": "scss, css",
+    "prefix": "bt",
+    "body": [
+      "border-top: ${1:1px} solid ${2:#000};",
+      "$0"
+    ],
+    "description": "bt"
+  },
+
+  "bl myscss": {
+    "scope": "scss, css",
+    "prefix": "bl",
+    "body": [
+      "border-left: ${1:1px} solid ${2:#000};",
+      "$0"
+    ],
+    "description": "bl"
+  },
+
+  "br myscss": {
+    "scope": "scss, css",
+    "prefix": "br",
+    "body": [
+      "border-right: ${1:1px} solid ${2:#000};",
+      "$0"
+    ],
+    "description": "br"
+  },
+
+  "bbn myscss": {
+    "scope": "scss, css",
+    "prefix": "bbn",
+    "body": [
+      "border-bottom: none;",
+      "$0"
+    ],
+    "description": "bbn"
+  },
+
+  "btn myscss": {
+    "scope": "scss, css",
+    "prefix": "btn",
+    "body": [
+      "border-top: none;",
+      "$0"
+    ],
+    "description": "btn"
+  },
+
+  "bln myscss": {
+    "scope": "scss, css",
+    "prefix": "bln",
+    "body": [
+      "border-left: none;",
+      "$0"
+    ],
+    "description": "bln"
+  },
+
+  "brn myscss": {
+    "scope": "scss, css",
+    "prefix": "brn",
+    "body": [
+      "border-right: none;",
+      "$0"
+    ],
+    "description": "brn"
+  },
+
+  "bbc myscss": {
+    "scope": "scss, css",
+    "prefix": "bbc",
+    "body": [
+      "border-bottom-color: ${1:#${2:000}};","${0:}"
+    ],
+    "description": "bbc"
+  },
+
+  "btc myscss": {
+    "scope": "scss, css",
+    "prefix": "btc",
+    "body": [
+      "border-top-color: ${1:#${2:000}};","${0:}"
+    ],
+    "description": "btc"
+  },
+
+  "brc myscss": {
+    "scope": "scss, css",
+    "prefix": "brc",
+    "body": [
+      "border-right-color: ${1:#${2:000}};","${0:}"
+    ],
+    "description": "brc"
+  },
+
+  "blc myscss": {
+    "scope": "scss, css",
+    "prefix": "blc",
+    "body": [
+      "border-left-color: ${1:#${2:000}};","${0:}"
+    ],
+    "description": "blc"
+  },
+
+  "bbw myscss": {
+    "scope": "scss, css",
+    "prefix": "bbw",
+    "body": [
+      "border-bottom-width: ${1:}px;","${0:}"
+    ],
+    "description": "bbw"
+  },
+
+  "btw myscss": {
+    "scope": "scss, css",
+    "prefix": "btw",
+    "body": [
+      "border-top-width: ${1:}px;","${0:}"
+    ],
+    "description": "btw"
+  },
+
+  "brw myscss": {
+    "scope": "scss, css",
+    "prefix": "brw",
+    "body": [
+      "border-right-width: ${1:}px;","${0:}"
+    ],
+    "description": "brw"
+  },
+
+  "blw myscss": {
+    "scope": "scss, css",
+    "prefix": "blw",
+    "body": [
+      "border-left-width: ${1:}px;","${0:}"
+    ],
+    "description": "blw"
+  },
+
+  "color myscss": {
+    "scope": "scss, css",
+    "prefix": "c",
+    "body": [
+      "color: ${1:#${2:000}};","${0:}"
+    ],
+    "description": "color fs"
+  },
+
+  "comments myscss": {
+    "scope": "scss, css",
+    "prefix": "cm",
+    "body": [
+      "/* ----- ${1:Name} ------------------- */",
+      "${0:}","",
+      
+      "/* ----- END ${1:Name} --------------- */",
+      "/*-------------------------------------*/",
+      "/*-------------------------------------*/",
+    ],
+    "description": "comments"
+  },
+
+  "media inner max myscss": {
+    "scope": "scss, css",
+    "prefix": "m1",
+    "body": [
+      "@media (max-width: ${1:767}px) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner max"
+  },
+
+  "media inner min myscss": {
+    "scope": "scss, css",
+    "prefix": "m2",
+    "body": [
+      "@media (min-width: ${1:768}px) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner min"
+  },
+
+  "media inner lg myscss": {
+    "scope": "scss, css",
+    "prefix": "mlg",
+    "body": [
+      "@media (max-width: \\$lg) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media  inner lg"
+  },
+
+  "media inner md myscss": {
+    "scope": "scss, css",
+    "prefix": "mmd",
+    "body": [
+      "@media (max-width: \\$md) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner md"
+  },
+
+  "media inner sm myscss": {
+    "scope": "scss, css",
+    "prefix": "msm",
+    "body": [
+      "@media (max-width: \\$sm) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner sm"
+  },
+
+  "media inner xl myscss": {
+    "scope": "scss, css",
+    "prefix": "mxl",
+    "body": [
+      "@media (max-width: \\$xl) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner xl"
+  },
+
+  "media inner xxl myscss": {
+    "scope": "scss, css",
+    "prefix": "mxxl",
+    "body": [
+      "@media (max-width: \\$xxl) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner xxl"
+  },
+
+  "media inner xxs myscss": {
+    "scope": "scss, css",
+    "prefix": "mxxs",
+    "body": [
+      "@media (max-width: \\$xxs) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner xxs"
+  },
+
+  "media inner xsm myscss": {
+    "scope": "scss, css",
+    "prefix": "mxsm",
+    "body": [
+      "@media (max-width: \\$xsm) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner xsm"
+  },
+
+  "media inner xxsm myscss": {
+    "scope": "scss, css",
+    "prefix": "mxxsm",
+    "body": [
+      "@media (max-width: \\$xxsm) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media inner xxsm"
+  },
+
+  "media portrait ss": {
+    "scope": "scss, css",
+    "prefix": "mport",
+    "body": [
+      "@media only screen and (max-width: 1280px) and (orientation: portrait) and (min-width: 700px) {",
+      "\t${0:}",
+      "}",
+    ],
+    "description": "media portrait main"
+  },
+
+  "media min myscss": {
+    "scope": "scss, css",
+    "prefix": "mmin",
+    "body": [
+      "/* Min width ${1:} pixels */",
+      "@media only screen and (min-width: ${1:}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media min width ${1:} pixels */",
+    ],
+    "description": "media min"
+  },
+
+  "media max myscss": {
+    "scope": "scss, css",
+    "prefix": "mmax",
+    "body": [
+      "/* max width ${1:} pixels */",
+      "@media only screen and (max-width: ${1:}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media max width ${1:} pixels */",
+    ],
+    "description": "media max"
+  },
+
+  "media 640 min myscss": {
+    "scope": "scss, css",
+    "prefix": "m6",
+    "body": [
+      "/* Min width ${1:640} pixels */",
+      "@media only screen and (min-width: ${1:640}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media min width ${1:640} pixels */",
+    ],
+    "description": "media 640min"
+  },
+
+  "media 768 min myscss": {
+    "scope": "scss, css",
+    "prefix": "m7",
+    "body": [
+      "/* Min width ${1:768} pixels */",
+      "@media only screen and (min-width: ${1:768}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media min width ${1:768} pixels */",
+    ],
+    "description": "media 768min"
+  },
+
+  "media 1000 min myscss": {
+    "scope": "scss, css",
+    "prefix": "mmin1",
+    "body": [
+      "/* Min width ${1:1025} pixels */",
+      "@media only screen and (min-width: ${1:1025}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media min width ${1:1025} pixels */",
+    ],
+    "description": "media 1000min"
+  },
+
+  "media 1200 min myscss": {
+    "scope": "scss, css",
+    "prefix": "mmin12",
+    "body": [
+      "/* Min width ${1:1200} pixels */",
+      "@media only screen and (min-width: ${1:1200}px) {",
+      "\t${0:}",
+      "}",
+      "/* end media min width ${1:1200} pixels */",
+    ],
+    "description": "media 1200min"
+  },
+
+  "media 767 max myscss": {
+    "scope": "scss, css",
+    "prefix": "m767",
+    "body": [
+      "/* Max width ${1:767} pixels */",
+      "@media only screen and (max-width: ${1:767}px) {",
+      "\t${0:}",
+      "$0",
+      "/* end media max width ${1:767} pixels */",
+    ],
+    "description": "media 767max"
+  },
+
+  "font face myscss": {
+    "scope": "scss, css",
+    "prefix": "face",
+    "body": [
+      "@font-face {",
+      "\tfont-family: '${1:Montserrat}';",
+      "\tsrc: url('../fonts/${2:Montserrat}.woff2') format(\"woff2\"), url('../fonts/${2:Montserrat}.woff') format(\"woff\");",
+      "\tfont-weight: normal;",
+      "\tfont-style: normal;",
+      "}",
+      "${0:}"
+    ],
+    "description": "font face"
+  },
+
+  "font myscss": {
+    "scope": "scss, css",
+    "prefix": "font",
+    "body": [
+      "font: ${1:normal} ${2:normal} ${3:}px/${4:10px} \\$font1;",
+      "$0",
+    ],
+    "description": "font sass"
+  },
+
+  "ffamily base sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff0",
+    "body": [
+      "font-family: '$1', Arial, sans-serif;",
+      "$0",
+    ],
+    "description": "ff base sass"
+  },
+
+  "ffamily1 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff",
+    "body": [
+      "font-family: \\$font1;",
+      "$0",
+    ],
+    "description": "ff1 sass"
+  },
+
+  "ffamily2 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff2",
+    "body": [
+      "font-family: \\$font2;",
+      "$0",
+    ],
+    "description": "ff2 sass"
+  },
+
+  "ffamily3 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff3",
+    "body": [
+      "font-family: \\$font3;",
+      "$0",
+    ],
+    "description": "ff3 sass"
+  },
+
+  "ffamily4 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff4",
+    "body": [
+      "font-family: \\$font4;",
+      "$0",
+    ],
+    "description": "ff4 sass"
+  },
+
+  "ffamily5 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff5",
+    "body": [
+      "font-family: \\$font5;",
+      "$0",
+    ],
+    "description": "ff5 sass"
+  },
+
+  "ffamily6 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff6",
+    "body": [
+      "font-family: \\$font6;",
+      "$0",
+    ],
+    "description": "ff6 sass"
+  },
+
+  "ffamily7 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff7",
+    "body": [
+      "font-family: \\$font7;",
+      "$0",
+    ],
+    "description": "ff7 sass"
+  },
+
+  "ffamily8 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff8",
+    "body": [
+      "font-family: \\$font8;",
+      "$0",
+    ],
+    "description": "ff8 sass"
+  },
+
+  "ffamily9 sass myscss": {
+    "scope": "scss, css",
+    "prefix": "ff9",
+    "body": [
+      "font-family: \\$font9;",
+      "$0",
+    ],
+    "description": "ff9 sass"
+  },
+
+  "dotted string myscss2": {
+    "scope": "scss, css",
+    "prefix": "ellipsis2",
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "display: -webkit-box;",
+      "-webkit-line-clamp: $1;",
+      "-webkit-box-orient: vertical;",
+      "$0"
+    ],
+    "description": "multiline text overflow with ellipsis"
+  },
+
+  "dotted string myscss": {
+    "scope": "scss, css",
+    "prefix": "ellipsis",
+    "body": [
+      "display: block;",
+      "text-overflow: ellipsis;",
+      "overflow: hidden;",
+      "white-space: nowrap;",
+      "$0"
+    ],
+    "description": "t-overflow: ellipsis"
+  },
+
+  "fww myscss": {
+    "scope": "scss, css",
+    "prefix": "fww",
+    "body": [
+      "flex-wrap: wrap;",
+      "$0"
+    ],
+    "description": "fww"
+  },
+
+  "nth myscss": {
+    "scope": "scss, css",
+    "prefix": "nth",
+    "body": [
+      "&:nth-child($1) {",
+      "\t$0",
+      "}"
+    ],
+    "description": "nth"
+  },
+
+  "fc myscss": {
+    "scope": "scss, css",
+    "prefix": "fc",
+    "body": [
+      "&:first-child {",
+      "\t$0",
+      "}"
+    ],
+    "description": "fc"
+  },
+
+  "lc myscss": {
+    "scope": "scss, css",
+    "prefix": "lc",
+    "body": [
+      "&:last-child {",
+      "\t$0",
+      "}"
+    ],
+    "description": "lc"
+  },
+
+  "trs myscss": {
+    "scope": "scss, css",
+    "prefix": "trs",
+    "body": [
+      "transition: all 0.${1:2}s ${2:ease-in-out};",
+      "$0"
+    ],
+    "description": "trs"
+  },
+
+  "mgt myscss": {
+    "scope": "scss, css",
+    "prefix": "mgt",
+    "body": [
+      "margin-top: $1;",
+      "$0"
+    ],
+    "description": "mgt"
+  },
+
+  "mgb myscss": {
+    "scope": "scss, css",
+    "prefix": "mgb",
+    "body": [
+      "margin-bottom: $1;",
+      "$0"
+    ],
+    "description": "mgb"
+  },
+
+  "mgr myscss": {
+    "scope": "scss, css",
+    "prefix": "mgr",
+    "body": [
+      "margin-right: $1;",
+      "$0"
+    ],
+    "description": "mgr"
+  },
+
+  "mgl myscss": {
+    "scope": "scss, css",
+    "prefix": "mgl",
+    "body": [
+      "margin-left: $1;",
+      "$0"
+    ],
+    "description": "mgl"
+  },
+
+  "mgba myscss": {
+    "scope": "scss, css",
+    "prefix": "mgba",
+    "body": [
+      "margin-bottom: auto;",
+      "$0"
+    ],
+    "description": "mgba"
+  },
+
+  "mgta myscss": {
+    "scope": "scss, css",
+    "prefix": "mgta",
+    "body": [
+      "margin-top: auto;",
+      "$0"
+    ],
+    "description": "mgta"
+  },
+
+  "mgla myscss": {
+    "scope": "scss, css",
+    "prefix": "mgla",
+    "body": [
+      "margin-left: auto;",
+      "$0"
+    ],
+    "description": "mgla"
+  },
+
+  "mgra myscss": {
+    "scope": "scss, css",
+    "prefix": "mgra",
+    "body": [
+      "margin-right: auto;",
+      "$0"
+    ],
+    "description": "mgra"
+  },
+
+  "mga myscss": {
+    "scope": "scss, css",
+    "prefix": "mga",
+    "body": [
+      "margin: 0 auto;",
+      "$0"
+    ],
+    "description": "mga"
+  },
+
+  "bg image myscss": {
+    "scope": "scss, css",
+    "prefix": "bgii",
+    "body": [
+      "background-image: url('../img/$1');",
+      "background-repeat: no-repeat;",
+      "background-position: ${2:50}% ${3:50}%;"
+    ],
+    "description": "bg + no-repeat + position"
+  },
+
+  "fixed mobile scroll ios myscss": {
+    "scope": "scss, css",
+    "prefix": "fixscroll",
+    "body": [
+      ".document-scroll-blocker {",
+      "\ttouch-action: none;",
+      "\t-webkit-overflow-scrolling: none;",
+      "\toverflow: hidden;",
+      "\toverscroll-behavior: none;",
+      "}"
+    ],
+    "description": "fixed mobile scroll ios"
+  },
+
+  "off fixed mobile scroll ios myscss": {
+    "scope": "scss, css",
+    "prefix": "fixoffscroll",
+    "body": [
+      ".document-scroll-blocker {",
+      "\ttouch-action: auto;",
+      "\t-webkit-overflow-scrolling: auto;",
+      "\toverflow: visible;",
+      "\toverscroll-behavior: auto;",
+      "}"
+    ],
+    "description": "off fixed mobile scroll ios"
+  },
+
+}

@@ -64,7 +64,6 @@ $rem-base: $rem-default-font-size;
 //   width: vw(0.8); // Використання функції vw для обчислення 80% ширини вікна
 // }
 
-
 @mixin target-ie11 {
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 		@content;
@@ -78,7 +77,7 @@ $rem-base: $rem-default-font-size;
 }
 
 @mixin target-safari {
-	@media not all and (min-resolution: .001dpcm) {
+	@media not all and (min-resolution: 0.001dpcm) {
 		@content;
 	}
 }
@@ -115,11 +114,9 @@ $rem-base: $rem-default-font-size;
 	@if $position {
 		-o-object-position: $position;
 		object-position: $position;
-		font-family: "object-fit: #{$fit}; object-position: #{$position}";
-	}
-
-	@else {
-		font-family: "object-fit: #{$fit}";
+		font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+	} @else {
+		font-family: 'object-fit: #{$fit}';
 	}
 }
 
@@ -145,7 +142,7 @@ $rem-base: $rem-default-font-size;
 }
 
 @mixin absolute-pseudo-full {
-	content: "";
+	content: '';
 
 	@include absolute-full-screen;
 }
@@ -158,30 +155,26 @@ $rem-base: $rem-default-font-size;
 		width: 100%;
 
 		@if $arg2 == null {
-			@if unit($arg) == "%" {
+			@if unit($arg) == '%' {
 				padding-top: $arg;
+			} @else {
+				padding-top: percentage(1 / $arg);
 			}
-
-			@else {
-				padding-top: percentage(1/$arg);
-			}
+		} @else {
+			padding-top: percentage(strip-unit($arg) / strip-unit($arg2));
 		}
 
-		@else {
-			padding-top: percentage(strip-unit($arg)/strip-unit($arg2));
-		}
-
-		content: "";
+		content: '';
 	}
 }
 
-@mixin pseudo($display: block, $pos: absolute, $content: "") {
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
 	position: $pos;
 	display: $display;
 	content: $content;
 }
 
-@mixin anim($param: all, $dur: .2s, $type: ease-in-out, $delay: 0s) {
+@mixin anim($param: all, $dur: 0.2s, $type: ease-in-out, $delay: 0s) {
 	transition: $param $dur $type $delay;
 }
 
@@ -192,9 +185,47 @@ $rem-base: $rem-default-font-size;
 
 @mixin hover {
 	@media not all and (hover: none) {
-
 		&:hover {
 			@content;
 		}
 	}
 }
+
+@mixin hover-active {
+	@media not all and (hover: none) {
+		&:hover {
+			@content;
+		}
+	}
+	@media (hover: none) {
+		&:active {
+			@content;
+		}
+	}
+}
+
+// // adaptive size responsive design
+//clamp
+@function f-clamp($min-size, $max-size, $min-width, $max-width) {
+	$min-s-srp: strip-unit($min-size);
+	$max-s-srp: strip-unit($max-size);
+	$min-w-srp: strip-unit($min-width);
+	$max-w-srp: strip-unit($max-width);
+	$size-difference: $max-s-srp - $min-s-srp;
+	$width-difference: $max-w-srp - $min-w-srp;
+	$vw-coefficient: ($size-difference / $width-difference) * 100;
+	$initial-offset: $min-s-srp - (($min-w-srp / 100) * $vw-coefficient);
+
+	@return clamp(#{$min-s-srp}px, calc(#{$initial-offset}px + #{$vw-coefficient}vw), #{$max-s-srp}px);
+}
+////	font-size: f-clamp(20px, 50px, 768px, 1440px);
+////  padding: f-clamp(20, 50, 768, 1440) f-clamp(12, 150, 768, 1440);
+//vw
+// @function adaptive-size($size, $screen-width) {
+//   $vw-size: $size / ($screen-width / 100);
+//   @return $vw-size * 1vw;
+// }
+//// .element {
+//// 	font-size: adaptive-size(25px, 1440px);
+////   padding: adaptive-size(5px, 1440px) adaptive-size(15px, 1440px);
+//// }

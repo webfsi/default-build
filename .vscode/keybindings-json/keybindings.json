@@ -1,0 +1,143 @@
+// Поместите настраиваемые сочетания клавиш в этот файл, чтобы переопределить сочетания клавиш по умолчанию.
+[
+  {
+    "key": "cmd+shift+g",
+    "command": "editor.emmet.action.wrapWithAbbreviation",
+    "when": "editorTextFocus && !editorReadonly"
+    // обернуть выбранное в тег
+  },
+  // {
+  //   "key": "cmd+space",
+  //   "command": "editor.action.triggerSuggest",
+  //   "when": "editorHasCompletionItemProvider && editorTextFocus && !editorReadonly"
+  // },
+
+  {
+    "key": "cmd+alt+space",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    // перебивка стандартного cmd+shift+space
+  },
+  {
+    "key": "cmd+shift+space",
+    "command": "editor.action.smartSelect.expand",
+    "when": "editorTextFocus"
+    // выделение внутреннего содержимого
+  },
+
+  {
+    "key": "cmd+shift+k",
+    "command": "editor.emmet.action.removeTag"
+    // removeTag
+  },
+
+  {
+    "key": "cmd+shift+alt+b",
+    "command": "workbench.view.debug"
+    // перебивка деф cmd+shift+d
+  },
+  {
+    "key": "cmd+shift+d",
+    "command": "editor.action.duplicateSelection"
+    // дублирование выделленного
+  },
+
+  {
+    "key": "cmd+k cmd+u",
+    "command": "editor.action.transformToUppercase"
+    // transformToUppercase
+  },
+  {
+    "key": "cmd+k cmd+l",
+    "command": "editor.action.transformToLowercase"
+    // transformToLowercase
+  },
+  {
+    "key": "cmd+alt+v",
+    "command": "editor.action.clipboardCopyWithSyntaxHighlightingAction"
+  },
+  {
+    "key": "cmd+tab",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor",
+    "when": "!inEditorsPicker"
+    // полный список открытых груп
+  },
+  {
+    "key": "cmd+shift+/",
+    "command": "editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+    // комент в указанном месте
+  },
+  {
+    "key": "shift+alt+a",
+    "command": "-editor.action.blockComment",
+    "when": "editorTextFocus && !editorReadonly"
+    // комент в указанном месте минус
+  },
+  {
+    "key": "cmd+enter",
+    "command": "acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  // {
+  //   "key": "cmd+v",
+  //   "command": "pasteAndIndent.action",
+  //   "when": "editorTextFocus && !editorReadonly"
+  // },
+  // {
+  //     "key": "cmd+v",
+  //     "command": "editor.action.clipboardPasteAction",
+  //     "when": "!editorTextFocus"
+  // },
+  // {
+  //     "key": "cmd+shift+v",
+  //     "command": "editor.action.clipboardPasteAction",
+  //     "when": "editorTextFocus && !editorReadonly"
+  // },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion",
+    "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+  },
+  {
+    "key": "shift+enter",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+        "snippet": " {\r\t$0\r}"
+    }
+  },
+  {
+    // https://marketplace.visualstudio.com/items?itemName=v4run.transpose
+    "key": "cmd+t",
+    "command": "extension.transpose"
+    // меняет местами
+  },
+  {
+    "key": "cmd+=", 
+    "command": "-editor.action.zoomIn"
+  },
+  {
+    "key": "cmd+=", 
+    "command": "type",
+    "args": {"text": "@include "},
+    "when": "editorTextFocus"
+  }
+  //macros
+  // {
+  //   "key": "ctrl+shift+/",
+  //   "command": "macros.addCommentAndNewLine"
+  // },
+  // {
+  //   "key": "ctrl+shift+]",
+  //   "command": "macros.anotherMacro"
+  // },
+  // {
+  //   "key": "ctrl+shift+l",
+  //   "command": "macros.removeUnits"
+  // },
+  // {
+  //   "key": "shift+alt+c",
+  //   "command": "extension.calculateReplace"
+  // }
+]

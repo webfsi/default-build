@@ -1,19 +1,23 @@
 // breakpoints (desktop first)
-$b-mobile-mini: 479px;
-$b-mobile-midi: 639px;
+$b-mobile-standart: 375px;
+$b-mobile-mini: 400px;
+$b-mobile-small: 479px;
+$b-mobile-midi: 539px;
 $b-mobile: 699px;
+$b-tablet-mini: 899px;
 $b-tablet: 1023px;
 $b-tablet-maxi: 1199px;
-$b-labtop-mini: 1299px;
+$b-laptop-mini: 1299px;
 $b-laptop: 1439px;
-$b-desktop: 1899px;
+$b-laptop-maxi: 1599px;
+$b-desktop-mini: 1799px;
+$b-desktop: 1999px;
 $b-desktop-maxi: 2239px;
 
 //fonts
 $font1: 'Lato', helvetica, tahoma, arial, sans-serif;
 $font2: 'Elgoc', helvetica, tahoma, arial, sans-serif;
 $font3: 'Montserrat', helvetica, tahoma, arial, sans-serif;
-
 
 //colors
 $c-black: #000;
@@ -35,48 +39,44 @@ $wrap-md: 45px;
 $wrap-sm: 30px;
 
 // tags
-$h: "h1, h2, h3, h4, h5, h6";
+$h: 'h1, h2, h3, h4, h5, h6';
 $input-txt: 'input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"], textarea';
 
 // z-index
 $z-index: (
-	cursor    : 100000000,
-	modal     : 1200,
-	overlay   : 1100,
-	header    : 1000,
-	footer    : 900,
-	dropdown  : 800
+	cursor: 100000000,
+	modal: 1200,
+	overlay: 1100,
+	header: 1000,
+	footer: 900,
+	dropdown: 800
 );
 
 $s-phone: 375px;
 $tablet: 700px;
 
 // fonts size
-
 $rem-default-font-size: 16px; //general.scss
+$default-font-size: 16px;
+$default-line-height: 24/16; /* 1.5 */
+$default-font-family: $font1;
+$default-font-style: normal;
+$default-font-weight: 400;
 
-
-$vw-base: 14.4px;
-$vw-base-laptop: 14.4px;
-$vw-base-mobile: 3.75px;
-
-@function fzd($size) {
-  $vw-size: $size / $vw-base;
-  @return $vw-size * 1vw;
-}
-
-@function fzl($size) {
-  $vw-size: $size / $vw-base-laptop;
-  @return $vw-size * 1vw;
-}
-
-@function fzm($size) {
-  $vw-size: $size / $vw-base-mobile;
-  @return $vw-size * 1vw;
-}
+//colors
+$color-default: #fff;
+$color-body: #fff;
 
 :root {
-  	// From header
+	--body-font-family: $default-font-family;
+	--body-font-weight: $default-font-weight;
+	--body-font-style: $default-font-style;
+	--body-font-size: $default-font-size;
+	--body-line-height: $default-line-height;
+	--body-color: $color-default;
+	--body-bg-color: $color-body;
+	--color-default: $color-default;
+	// From header
 	/* Colours */
 	--primary-color-black: #000000;
 	--primary-color-white: #ffffff;

@@ -1,0 +1,37 @@
+{
+  "css":{
+    "snippets":{
+      "z": "&",
+      "cp": "cursor: pointer",
+      "trt": "transform: translate(${1:-50%}, ${2:-50%})",
+      "ttx": "transform: translateX(${1:0px})",
+      "tty": "transform: translateY(${1:0px})",
+      "ttr": "transform: rotate(${1:90deg})",
+      "pen": "pointer-events: none",
+      "fdc": "flex-direction: column",
+      "fdcr": "flex-direction: column-reverse",
+      "fdr": "flex-direction: row",
+      "fdrr": "flex-direction: row-reverse",
+      "gtc": "grid-template-columns: ${1:repeat(${2:2}, ${3:1fr})}",
+      "gtr": "grid-template-rows: ${1:repeat(${2:2}, ${3:1fr})}",
+      "gc": "grid-column: ${1:1}/ ${2:1}",
+      "gr": "grid-row: ${1:1}/ ${2:1}",
+      "cra": "color: rgba(${1:#000}, ${2:0.5})",
+      "pss": "position: sticky",
+      "psst": "position: static",
+      "psa": "position: absolute",
+      "psr": "position: relative",
+      "psf": "position: fixed",
+      "fzm": "font-size: fzm(${1:})",
+      "fzl": "font-size: fzl(${1:})",
+      "fzd": "font-size: fzd(${1:})",
+      "lhm": "line-height: fzm(${1:})",
+      "lhl": "line-height: fzl(${1:})",
+      "lhd": "line-height: fzd(${1:})",
+      "ci": "color: inherit"
+      
+      
+
+    }
+  }
+}

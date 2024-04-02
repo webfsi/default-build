@@ -9,18 +9,13 @@ metaImg: hub-meta.jpg
 pageName: homePage
 ---
 
-{% set url = {
-	step1: '',
-	step2: './',
-	step3: '/',
-	step4: '',
-	stepClass: 'step-link-change-url'
-} %}
-{% extends 'layouts/_page-default.twig' %}
-{% block content %}
+{% set url = { step1: '', step2: './', step3: '/', step4: '', stepClass: 'step-link-change-url' } %} {% extends 'layouts/_page-default.twig' %} {% block content %}
 
-<main data-scroll-container data-url>
+<main class="pt-[30px]">
 	{% include './pages/hub/_hub.twig' %}
+	<button class="btn ml-0">btnhover</button>
+	<button class="btn ml-0 -disabled">btn</button>
+	<button class="btn ml-0">btnhover</button>
 </main>
 
 {% endblock %}

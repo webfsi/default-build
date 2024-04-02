@@ -12,9 +12,18 @@ html.has-scroll-smooth body {
 
 html,
 body {
-  font-family: $font1;
-  font-weight: 400;
-  color: $c-black;
+	--bodyFontFamily: var(--body-font-family);
+	--bodyFontWeight: var(--body-font-weight);
+	--bodyFontStyle: var(--body-font-style);
+	--bodyFontSize: var(--body-font-size);
+	--bodyLineHeight: var(--body-line-height);
+	--bodyColor: var(--body-color);
+	--bodyBgColor: var(--body-bg-color);
+
+	font: var(--bodyFontStyle) var(--bodyFontWeight) var(--bodyFontSize)/var(--bodyLineHeight) var(--bodyFontFamily);
+  color: var(--bodyColor);
+	background-color: var(--bodyBgColor);
+
 
 }
 
